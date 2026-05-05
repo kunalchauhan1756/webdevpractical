@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Hello</h1>
+
+  <script>
+    const likebutton = document.createElement('button');
+    likebutton.innerText = 'Like';
+
+    likebutton.style.padding = '10px 20px';
+    likebutton.style.fontSize = '16px';
+    likebutton.style.backgroundColor = '#007BFF';
+    likebutton.style.color = '#FFFFFF';
+    likebutton.style.borderRadius = '5px';
+
+    likebutton.addEventListener('click', () => {
+      alert('You liked this!');
+    });
+
+    // MOST IMPORTANT
+    document.body.appendChild(likebutton);
+  </script>
+
+</body>
+</html>
